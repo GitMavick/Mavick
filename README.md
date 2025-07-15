@@ -77,13 +77,7 @@ portfolio/
 - Safari (latest)
 - Edge (latest)
 
-## Performance Features
 
-- Optimized images
-- Minified CSS and JS (for production)
-- Lazy loading for images
-- Smooth scrolling
-- Efficient animations
 
 ## Future Enhancements
 

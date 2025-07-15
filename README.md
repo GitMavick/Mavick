@@ -78,6 +78,7 @@ portfolio/
 - Edge (latest)
 
 
+
 ## Future Enhancements
 
 - [ ] Blog section

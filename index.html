@@ -4,7 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GitMavick - Full Stack Developer & Open Source Enthusiast. Passionate about creating innovative web applications and contributing to open-source projects.">
+    <meta name="keywords"
+        content="web developer, full stack developer, open source, JavaScript, React, Node.js, portfolio">
+    <meta name="author" content="GitMavick">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitmavick.com/">
+    <meta property="og:title" content="GitMavick - Full Stack Developer Portfolio">
+    <meta property="og:description"
+        content="Full Stack Developer & Open Source Enthusiast creating innovative web applications">
+    <meta property="og:image" content="https://gitmavick.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gitmavick.com/">
+    <meta property="twitter:title" content="GitMavick - Full Stack Developer Portfolio">
+    <meta property="twitter:description"
+        content="Full Stack Developer & Open Source Enthusiast creating innovative web applications">
+    <meta property="twitter:image" content="https://gitmavick.com/og-image.jpg">
+
     <title>GitMavick - Portfolio</title>
+    <link rel="canonical" href="https://gitmavick.com/">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,352 +40,391 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">GitMavick</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+            <a href="#home" class="nav-logo" aria-label="GitMavick home">GitMavick</a>
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#home" class="nav-link" role="menuitem">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                <li class="nav-item" role="none">
+                    <a href="#about" class="nav-link" role="menuitem">About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                <li class="nav-item" role="none">
+                    <a href="#projects" class="nav-link" role="menuitem">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                <li class="nav-item" role="none">
+                    <a href="#skills" class="nav-link" role="menuitem">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
                 </li>
             </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">GitMavick</span>
-                </h1>
-                <p class="hero-subtitle">Full Stack Developer & Open Source Enthusiast</p>
-                <p class="hero-description">
-                    I create innovative web applications and contribute to open-source projects.
-                    Passionate about clean code, modern technologies, and solving complex problems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-img">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <div class="floating-icons">
-                        <i class="fab fa-js-square"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fab fa-python"></i>
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Hi, I'm GitMavick
+                    </h1>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate full-stack developer with a strong focus on creating efficient,
-                        scalable, and user-friendly applications. My journey in software development
-                        started with a curiosity about how things work, which led me to explore various
-                        technologies and frameworks.
+                    <p class="hero-subtitle">Full Stack Developer &amp; Open Source Enthusiast</p>
+                    <p class="hero-description">
+                        I create innovative web applications and contribute to open-source projects.
+                        Passionate about clean code, modern technologies, and solving complex problems.
                     </p>
-                    <p>
-                        I believe in continuous learning and staying updated with the latest industry trends.
-                        When I'm not coding, you can find me contributing to open-source projects,
-                        writing technical blogs, or exploring new technologies.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>25+</h3>
-                            <p>Open Source Contributions</p>
-                        </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" aria-label="View my projects">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" aria-label="Contact me">Get In Touch</a>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/400x500/4a90e2/ffffff?text=Your+Photo" alt="GitMavick"
-                        class="about-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <i class="fas fa-user-circle" aria-hidden="true"></i>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Express.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-tools"></i>
-                            <span>REST APIs</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
+                        <div class="floating-icons" aria-hidden="true">
+                            <i class="fab fa-js-square" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-node-js" title="Node.js"></i>
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-git-alt" title="Git"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4a90e2/ffffff?text=E-Commerce+App"
-                            alt="E-Commerce App">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate full-stack developer with a strong focus on creating efficient,
+                            scalable, and user-friendly applications. My journey in software development
+                            started with a curiosity about how things work, which led me to explore various
+                            technologies and frameworks.
+                        </p>
+                        <p>
+                            I believe in continuous learning and staying updated with the latest industry trends.
+                            When I'm not coding, you can find me contributing to open-source projects,
+                            writing technical blogs, or exploring new technologies.
+                        </p>
+                        <div class="about-stats" role="list">
+                            <div class="stat" role="listitem">
+                                <h3>50+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat" role="listitem">
+                                <h3>3+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat" role="listitem">
+                                <h3>25+</h3>
+                                <p>Open Source Contributions</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include
-                            user authentication, payment integration, and admin dashboard.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
-                        </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x500/4a90e2/ffffff?text=Your+Photo"
+                            alt="GitMavick profile picture" class="about-img" loading="lazy">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Task+Manager"
-                            alt="Task Manager">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items" role="list">
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-js-square" aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-vuejs" aria-hidden="true"></i>
+                                <span>Vue.js</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management tool with real-time updates, drag-and-drop functionality, and
-                            team collaboration features.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Socket.io</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items" role="list">
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-python" aria-hidden="true"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fas fa-server" aria-hidden="true"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fas fa-fire" aria-hidden="true"></i>
+                                <span>Firebase</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/27ae60/ffffff?text=Weather+App" alt="Weather App">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>A responsive weather application with location-based forecasts, interactive maps, and weather
-                            alerts using modern APIs.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Weather API</span>
-                            <span>Chart.js</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Portfolio+Site"
-                            alt="Portfolio Site">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Developer Portfolio</h3>
-                        <p>A modern, responsive portfolio website showcasing projects, skills, and achievements with
-                            smooth animations and interactive elements.</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>GSAP</span>
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-items" role="list">
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-docker" aria-hidden="true"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fab fa-aws" aria-hidden="true"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fas fa-tools" aria-hidden="true"></i>
+                                <span>REST APIs</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                <span>Responsive Design</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about
-                        technology and development.</p>
-
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>gitmavick@example.com</p>
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/4a90e2/ffffff?text=E-Commerce+App"
+                                alt="E-Commerce Platform project screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View E-Commerce Platform live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View E-Commerce Platform source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Your City, Country</p>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce application built with React, Node.js, and MongoDB. Features
+                                include
+                                user authentication, payment integration, and admin dashboard.</p>
+                            <div class="project-tech" role="list">
+                                <span role="listitem">React</span>
+                                <span role="listitem">Node.js</span>
+                                <span role="listitem">MongoDB</span>
+                                <span role="listitem">Stripe</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Task+Manager"
+                                alt="Task Management App project screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Task Management App live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Task Management App source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management tool with real-time updates, drag-and-drop functionality,
+                                and
+                                team collaboration features.</p>
+                            <div class="project-tech" role="list">
+                                <span role="listitem">Vue.js</span>
+                                <span role="listitem">Socket.io</span>
+                                <span role="listitem">Express</span>
+                                <span role="listitem">PostgreSQL</span>
+                            </div>
                         </div>
+                    </article>
 
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/27ae60/ffffff?text=Weather+App"
+                                alt="Weather Dashboard project screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Weather Dashboard live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Weather Dashboard source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <label for="message">Your Message</label>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>A responsive weather application with location-based forecasts, interactive maps, and
+                                weather
+                                alerts using modern APIs.</p>
+                            <div class="project-tech" role="list">
+                                <span role="listitem">JavaScript</span>
+                                <span role="listitem">Weather API</span>
+                                <span role="listitem">Chart.js</span>
+                                <span role="listitem">CSS3</span>
+                            </div>
                         </div>
+                    </article>
 
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Portfolio+Site"
+                                alt="Developer Portfolio project screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Developer Portfolio live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Developer Portfolio source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Developer Portfolio</h3>
+                            <p>A modern, responsive portfolio website showcasing projects, skills, and achievements with
+                                smooth animations and interactive elements.</p>
+                            <div class="project-tech" role="list">
+                                <span role="listitem">HTML5</span>
+                                <span role="listitem">CSS3</span>
+                                <span role="listitem">JavaScript</span>
+                                <span role="listitem">GSAP</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about
+                            technology and development.</p>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:gitmavick@example.com" class="contact-link">
+                                        gitmavick@example.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Your City, Country</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links" role="list">
+                            <a href="#" class="social-link" aria-label="GitHub profile" role="listitem">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn profile" role="listitem">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter profile" role="listitem">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram profile" role="listitem">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form novalidate>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required aria-required="true">
+                                <label for="name">Your Name</label>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required aria-required="true">
+                                <label for="email">Your Email</label>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required aria-required="true">
+                                <label for="subject">Subject</label>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="form-error" aria-live="polite"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -378,10 +442,16 @@
                 </div>
                 <div class="footer-section">
                     <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <div class="social-links" role="list">
+                        <a href="#" class="social-link" aria-label="GitHub profile" role="listitem">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn profile" role="listitem">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter profile" role="listitem">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
